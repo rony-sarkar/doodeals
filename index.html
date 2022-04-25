@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ebay template</title>
+<!-- ======= google fonts ======= -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+<!-- ======= css ======= -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/css/style.css">
+<link rel="stylesheet" href="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/css/responsive.css">
+
+<style type="text/css">
+.logo {
+margin: 9px;
+}
+
+.header-top,
+#navbar ul li a:hover,
+.copy-right,
+.pro-icon a i.fa {
+background-color: #bd1111
+}
+
+.wsu h3 {
+color: #ffbe58
+}
+
+.Product-title-area,
+.box-area h1,
+.footer-top,
+.wsu h3 {
+background-color: #000
+}
+
+.pro-title {
+background-color: #ffbe58
+}
+
+.pro-title h3 {
+color: #000
+}
+
+.box-content {
+border: 1px solid #ececec
+}
+
+#navbar {
+position: relative
+}
+
+#navbar ul li a {
+font-size: 15px;
+padding: 20px 10px;
+}
+
+.subcategories {
+position: absolute;
+left: 0;
+width: 100%;
+top: 100%;
+background-color: #fff;
+z-index: 999;
+display: block !important;
+padding: 30px 0;
+display: none !important;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#navbar ul li:hover .subcategories {
+display: block !important
+}
+
+.subcategories li {
+text-align: left;
+width: 33%;
+float: left
+}
+
+.subcategories li a {
+display: block !important;
+padding: 8px 20px !important;
+color: #000 !important;
+}
+
+.subcategories li a:hover {
+background-color: #bd1111;
+    color: #fff !important;
+}
+
+.subcategories2 {
+display: block !important;
+margin-left: 40px
+}
+
+.subcategories2 li {
+display: block !important;
+float: inherit;
+width: 100%;
+position: relative
+}
+
+.subcategories2 li::before {
+position: absolute;
+left: 0;
+content: "\f101";
+color: #000;
+font-family: fontawesome
+}
+
+.subcategories2 li a {
+padding-top: 0 !important;
+padding-bottom: 0 !important
+}
+
+.subcategories2 li a:hover {
+color: #000 !important;
+background-color: transparent !important
+}
+
+.tab-part-area {
+padding: 30px 0 0
+}
+
+section.tab-section {
+display: none;
+padding: 40px 45px;
+border: 1px solid #ddd;
+color: #1a1a1a;
+overflow: hidden
+}
+
+.tab-part-area input {
+display: none
+}
+
+.tab-part-area label {
+color: #fff;
+font-size: 18px;
+font-weight: 600;
+border: 1px solid transparent;
+display: inline-block;
+margin: 0 0 -1px;
+padding: 10px 30px;
+text-align: center;
+text-transform: uppercase;
+border: 1px solid #000;
+background-color: #000;
+font-family: 'Open Sans', sans-serif;
+transition: .5s
+}
+
+.tab-part-area label:hover {
+cursor: pointer;
+color: #fff;
+border: 1px solid #bd1111;
+background-color: #bd1111
+}
+
+.tab-part-area input:checked+label {
+color: #fff;
+border: 1px solid #bd1111;
+background-color: #bd1111
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
+display: block
+}
+
+.tab-section h3 {
+font-size: 20px;
+color: #000;
+margin: 20px 0;
+font-weight: 700
+}
+
+.tab-section ul {
+margin-left: 30px;
+margin-bottom: 20px
+}
+
+.tab-section p {
+color: #3d3d3d;
+font-weight: 500
+}
+
+.tab-section p a {
+color: #000;
+font-weight: 600;
+text-decoration: underline
+}
+
+.footer-widget.footer-logo {
+padding: 10px 0
+}
+
+.footer-widget.footer-logo {
+margin: 0
+}
+
+.footer-widget.footer-logo {
+text-align: center
+}
+
+.footer-widget h2 {
+margin-bottom: 10px
+}
+
+.footer-widget h2::before {
+border: 1px solid #bd1111
+}
+
+.copy-right {
+padding: 10px 0
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+#navbar ul li a {
+font-size: 14px;
+padding: 13px
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+#navbar ul li a {
+font-size: 14px;
+padding: 13px
+}
+
+.footer-widget {
+margin-bottom: 44px
+}
+
+.tab-part-area label {
+padding: 10px 20px
+}
+}
+
+@media only screen and (max-width:767px) {
+.logo {
+text-align: center
+}
+
+.menu-container {
+margin: 0
+}
+
+#navbar {
+top: 0
+}
+
+#navbar ul li a {
+font-size: 14px;
+padding: 13px
+}
+
+#navbar ul li:hover .subcategories {
+display: none !important
+}
+
+.switch {
+background: #bd1111
+}
+
+.menu-container label {
+border: 1px solid #fff;
+right: 5px
+}
+
+.menu-container label::before {
+border-bottom: 2px solid #fff;
+box-shadow: 0 5px 0 0 #fff, 0 0 0 0 inset, 0 -5px 0 0 #fff
+}
+
+.tab-part-area label {
+display: block
+}
+
+section.tab-section {
+padding: 10px
+}
+
+.footer-top {
+border-color: #bd1111
+}
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="main-div">
+<div class="header-top">
+<div class="container">
+<div class="row">
+<div class="col-md-5">
+<!-- welcome part start-->
+<div class="wel-come">
+<h4>Welcome to <b>Doo Deals</b> eBay store!</h4>
+</div>
+<!-- welcome part end-->
+</div>
+<div class="col-md-7">
+<!-- welcome part start-->
+<div class="support">
+<div class="menu-top">
+<ul>
+<li><a href="https://feedback.ebay.co.uk/ws/eBayISAPI.dll?ViewFeedback2&amp;userid=vibe-hair-beauty-supplies&amp;ftab=AllFeedback&amp;myworld=true&amp;rt=nc&amp;_trksid=p2545226.m2531.l4585" target="_blank"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+Feedback</a>
+<span class="separate">|</span>
+</li>
+<li><a href="https://my.ebay.co.uk/ws/eBayISAPI.dll?AcceptSavedSeller&amp;sellerid=vibe-hair-beauty-supplies&amp;ssPageName=STRK:MEFS:ADDSTR&amp;rt=nc" target="_blank"><i class="fa fa-plus" aria-hidden="true"></i>
+Add to Favourites</a><span class="separate">|</span>
+</li>
+<li><a href="https://contact.ebay.co.uk/ws/eBayISAPI.dll?FindAnswers&amp;requested=vibe-hair-beauty-supplies&amp;_trksid=p2545226.m2531.l4583&amp;rt=nc" target="_blank"><i class="fa fa-commenting" aria-hidden="true"></i>
+Ask a question</a></li>
+</ul>
+</div>
+</div>
+<!-- welcome part end-->
+</div>
+</div>
+</div>
+</div>
+<!-- ======= header area start ======= -->
+<header class="header-area">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<!-- logo start -->
+<div class="logo">
+<a href="http://www.ebaystores.co.uk/vibehairbeautysupplies" target="_blank"><img src="https://rony-sarkar.github.io/doo-deals/logo.jpg" alt=""></a>
+</div>
+<!-- logo end -->
+</div>
+<div class="col-md-6">
+<!-- satisfacation img part start -->
+<div class="satisfacation text-right">
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/icon/1.png" alt="">
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/icon/2.png" alt="">
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/icon/3.png" alt="">
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/icon/4.png" alt="">
+</div>
+<!-- satisfacation img part end -->
+</div>
+</div>
+</div>
+</header>
+<!-- ======= header area end ======= -->
+
+<div class="menu-area-info float-left full-width">
+<div class="container">
+<div class="menu-wrapper">
+<div class="menu-area">
+<div class="menu-container">
+<div class="switch">
+<label for="menu-switcher"></label>
+</div>
+<input id="menu-switcher" class="menu-switcher" type="checkbox">
+<div id="navbar">
+<ul>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_cat=0&store_name=vibehairbeautysupplies&_oac=1" target="_blank">Health, Personal Care & Beauty</a>
+
+<ul class="subcategories">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=33426860012" target="_blank">Beauty</a>
+<ul class="subcategories2">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=34360755012" target="_blank">Body</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=36240567012" target="_blank">Waxing & Epilation</a>
+<ul class="subcategories2">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=36240570012" target="_blank">Wax</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=36240574012" target="_blank">Accessories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=33426861012" target="_blank">Nails</a>
+<ul class="subcategories2">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=34914773012" target="_blank">Manicure</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=34914774012" target="_blank">Gel Polish</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=34914775012" target="_blank">Acrylic</a></li>
+</ul>
+</li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=33493042012" target="_blank">Accessories</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=35422066012" target="_blank">Hairdressing</a>
+<ul class="subcategories2">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=35422076012" target="_blank">Hair Colour</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=35422077012" target="_blank">Styling Products</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=35422078012" target="_blank">Shampoo & Conditioner</a></li>
+</ul>
+</li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=36135730012" target="_blank">Hair Products</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=36135731012" target="_blank">Beauty Products</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=36135732012" target="_blank">Nail Products</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=39602466012" target="_blank">Hair Colouring</a>
+<ul class="subcategories2">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=39602471012" target="_blank">Bleach</a></li>
+</ul>
+</li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=39602475012" target="_blank">Hair Care</a>
+<ul class="subcategories2">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=39602519012" target="_blank">Shampoo</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=39602520012" target="_blank">Conditioner</a></li>
+</ul>
+</li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=40209712012" target="_blank">NXT</a></li>
+</ul>
+
+
+</li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_cat=0&store_name=vibehairbeautysupplies&_oac=1" target="_blank">Home & Garden</a>
+<ul class="subcategories">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41568935012" target="_blank">DIY</a>
+<ul class="subcategories2">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41568936012" target="_blank">Drill & Chargers</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41569009012" target="_blank">Sinks & Taps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_cat=0&store_name=vibehairbeautysupplies&_oac=1" target="_blank">Phones & Gadgets</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_cat=0&store_name=vibehairbeautysupplies&_oac=1" target="_blank">Pets Supplies</a></li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_cat=0&store_name=vibehairbeautysupplies&_oac=1" target="_blank">Electronics & Computers</a>
+<ul class="subcategories">
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=33493041012" target="_blank">Electricals</a></li>
+</ul>
+</li>
+<li><a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_cat=0&store_name=vibehairbeautysupplies&_oac=1&_sop=1" target="_blank">Clearance Deals</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<section class="Product-title-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pro-title">
+<h3>
+<!-- product title start -->
+
+IQ Intelligent Haircare Daily Shampoo + Conditioner 1000 ML Sizes-Everyday Hair
+
+<!-- product title end -->
+</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ======= product info start ======= -->
+<section class="pro-info">
+<div class="container">
+
+
+<div class="row">
+<div class="col-md-12">
+<div class="box-area">
+<h1><i class="fa fa-list-alt" aria-hidden="true"></i> Product images</h1>
+<!-- product images start -->
+<div class="pro-img">
+
+<div class="box-content">
+
+<div class="col-md-6 col-md-offset-3">
+
+<!-- product images start -->
+
+<img src="https://i.ebayimg.com/images/g/cqkAAOSwyW9f~hxj/s-l1600.jpg" alt="">
+
+<!-- product images end -->
+
+</div>
+
+</div>
+
+
+</div>
+<!-- product images end -->
+</div>
+</div>
+</div>
+
+</div>
+</section>
+<!-- ======= product info end ======= -->
+
+
+
+<!-- ======= tab area star ======= -->
+<div class="tab-part-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="tab-area">
+<input id="tab1" name="tabs" checked="" type="radio">
+<label for="tab1">Description</label>
+<input id="tab2" name="tabs" type="radio">
+<label for="tab2">payment</label>
+<input id="tab3" name="tabs" type="radio">
+<label for="tab3">SHIPPING</label>
+<input id="tab4" name="tabs" type="radio">
+<label for="tab4">RETURNS</label>
+<input id="tab5" name="tabs" type="radio">
+<label for="tab5">contact us</label>
+
+<!-- tab Description start -->
+<section id="content1" class="tab-section">
+
+<div class="tab-list">
+<p>IQ Intelligent Haircare Daily Shampoo (1000ml) is an everyday shampoo enriched with awesome Amaranth for classically clean and manageable hair, each and every day. With a gentle, sulphate-free formulation it is suitable for daily use on all hair types, making hair easier to manage. Completely paraben & cruelty-free.</p>
+<h3>Directions of use:</h3>
+<ul>
+<li>Distribute evenly through wet hair.</li>
+<li>Massage gently, rinse and repeat if necessary.</li>
+<li>For best results follow with IQ Daily Conditioner.</li>
+</ul>
+<p>Q Intelligent Haircare Daily Conditioner (1000ml) is an everyday conditioner that has been enriched with awe-inspiring Amaranth for an invigorating experience, leaving your hair silky soft. Suitable for all hair types it ensures softness, suppleness and manageability. Completely paraben & cruelty-free.</p>
+<h3>Directions of use:</h3>
+<ul>
+<li>Apply to the hair after shampooing and distribute to the mid-lengths and ends.</li>
+<li>Rinse thoroughly with warm water.</li>
+</ul>
+</div>
+
+</section>
+<!-- tab Description end -->
+
+<!-- tab Payment start -->
+<section id="content2" class="tab-section">
+
+<div class="tab-list">
+<ul>
+<li><b>Accept all major credit cards</b></li>
+</ul>
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/store/images/pay.png" alt="">
+<p><b>Questions:</b> Please message us if you have any questions or concerns.</p>
+</div>
+
+</section>
+<!-- tab Payment end -->
+
+<!-- tab SHIPPING start -->
+<section id="content3" class="tab-section">
+
+<div class="tab-list">
+<p> We offer worldwide shipping on the majority of our products but we are unable to ship Perfumes or Aerosols outside of mainland UK. Your order will be cancelled but it may take several days to notify you.</p>
+<p>Shipping is calculated automatically when you checkout.</p>
+<p>Items that are inclusive of shipping to Mainland UK addresses are sent using Royal Mail second class postage and can take between 3-5 working days depending on your location and the service levels provided for your area. Please allow sufficient time for your delivery to be made before contacting us.</p>
+</div>
+</section>
+<!-- tab SHIPPING end -->
+
+<!-- tab RETURNS start -->
+<section id="content4" class="tab-section">
+
+<div class="tab-list">
+<p><b> We accept returns under certain conditions.</b></p>
+<ul>
+<li>All items must be unopened and unused.</li>
+<li>We do not accept returns of medical devices and products.</li>
+<li>You must ensure that you buy products that are suitable for you, if in doubt consult your local pharmacist or GP. We are not responsible for any adverse reactions to any products we sell.</li>
+<li>If you return something because you no longer want it we will charge you the outgoing postage and packing costs.</li>
+<li>If your item is faulty then email us through the Ebay communications centre so that we can help you quickly and efficiently.</li>
+</ul>
+</div>
+</section>
+<!-- tab RETURNS end -->
+
+<!-- tab contact start -->
+<section id="content5" class="tab-section">
+
+<div class="tab-list">
+<p>Please feel free to contact us to discuss anything that you may have a question about.</p>
+<p>Contact us via the eBay messaging system <a href="https://contact.ebay.co.uk/ws/eBayISAPI.dll?FindAnswers&amp;requested=vibe-hair-beauty-supplies&amp;_trksid=p2545226.m2531.l4583&amp;rt=nc" target="_blank">here</a></p>
+
+</div>
+</section>
+<!-- tab contact end -->
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ======= tab area end ======= -->
+
+<!-- ======= Categories area star ======= -->
+<section class="policy-area">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="box-area">
+<h1><i class="fa fa-list-alt" aria-hidden="true"></i> View Our Categories </h1>
+<div class="categories-content">
+
+<!-- single featured product -->
+<div class="col-md-4 col-sm-6">
+<div class="feature-pro-info">
+<img src="https://i.ebayimg.com/00/s/MzAwWDMwMA==/z/oSoAAOSw3cdiLQLb/$_57.PNG?set_id=8800004005" alt="">
+<div class="pro-overflow">
+<div class="pro-details">
+<div class="pro-icon">
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_cat=0&store_name=vibehairbeautysupplies&_oac=1" target="_blank">
+<i class="fa fa-plus" aria-hidden="true"></i>
+</a>
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_cat=0&store_name=vibehairbeautysupplies&_oac=1" target="_blank">
+<h4>home and furniture</h4>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- single featured product -->
+<div class="col-md-4 col-sm-6">
+<div class="feature-pro-info">
+<img src="https://i.ebayimg.com/00/s/MzAwWDMwMA==/z/f84AAOSwrSNiLQRU/$_57.PNG?set_id=8800004005" alt="">
+<div class="pro-overflow">
+<div class="pro-details">
+<div class="pro-icon">
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41624737012" target="_blank">
+<i class="fa fa-plus" aria-hidden="true"></i>
+</a>
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41624737012" target="_blank">
+<h4>Pets Supplies</h4>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- single featured product -->
+<div class="col-md-4 col-sm-6">
+<div class="feature-pro-info">
+<img src="https://i.ebayimg.com/00/s/MzAwWDMwMA==/z/qFcAAOSwz1ZiLQTB/$_57.PNG?set_id=8800004005" alt="">
+<div class="pro-overflow">
+<div class="pro-details">
+<div class="pro-icon">
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41624734012" target="_blank">
+<i class="fa fa-plus" aria-hidden="true"></i>
+</a>
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41624734012" target="_blank">
+<h4>Health, Personal Care & Beauty</h4>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- single featured product -->
+<div class="col-md-4 col-sm-6">
+<div class="feature-pro-info">
+<img src="https://i.ebayimg.com/00/s/MzAwWDMwMA==/z/3WUAAOSwU8NiLQVT/$_57.PNG?set_id=8800004005" alt="">
+<div class="pro-overflow">
+<div class="pro-details">
+<div class="pro-icon">
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=0" target="_blank">
+<i class="fa fa-plus" aria-hidden="true"></i>
+</a>
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=0" target="_blank">
+<h4>Garden</h4>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- single featured product -->
+<div class="col-md-4 col-sm-6">
+<div class="feature-pro-info">
+<img src="https://i.ebayimg.com/00/s/MzAwWDMwMA==/z/vAkAAOSwqb1iLQWv/$_57.PNG?set_id=8800004005" alt="">
+<div class="pro-overflow">
+<div class="pro-details">
+<div class="pro-icon">
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41624738012" target="_blank">
+<i class="fa fa-plus" aria-hidden="true"></i>
+</a>
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=41624738012" target="_blank">
+<h4>toy and gadgets</h4>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- single featured product -->
+<div class="col-md-4 col-sm-6">
+<div class="feature-pro-info">
+<img src="https://i.ebayimg.com/00/s/MzAwWDMwMA==/z/AV8AAOSwTh9iLQX1/$_57.PNG?set_id=8800004005" alt="">
+<div class="pro-overflow">
+<div class="pro-details">
+<div class="pro-icon">
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=0" target="_blank">
+<i class="fa fa-plus" aria-hidden="true"></i>
+</a>
+<a href="https://www.ebay.co.uk/sch/i.html?_dmd=2&_dkr=1&iconV2Request=true&_ssn=doodeals&store_name=vibehairbeautysupplies&_oac=1&store_cat=0" target="_blank">
+<h4>Baby</h4>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======= Categories area end ======= -->
+
+<div class="support-box">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<!-- service start -->
+<div class="wsu text-center">
+<h3>Our Delivery Partners <i class="fa fa-hand-o-down" aria-hidden="true"></i></h3>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="promosion-area text-center">
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/patners/1.png" alt="">
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/patners/2.png" alt="">
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/patners/3.png" alt="">
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/patners/4.png" alt="">
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ======= footer area star ======= -->
+<footer class="footer-top">
+<div class="container">
+<div class="row">
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-widget footer-logo">
+<a href="" target="_blank"><img src="https://rony-sarkar.github.io/doo-deals/logo.jpg" alt=""></a>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-widget ask">
+<h2>Any Questions ?</h2>
+<p>SEND US A MESSAGE WE HAPPILY RESPOND WITHIN 24HRS</p>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-widget feed">
+<br>
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/footer_contact2.png" alt="">
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+<div class="footer-widget">
+<h2>We Accept PayPal</h2>
+<img src="https://hiknik.com/ebay/fiverr-2/Vibe-Hair-Beauty-Supplies/template-ebay/images/payment-left.png" alt="">
+</div>
+</div>
+
+</div>
+</div>
+</footer>
+
+<div class="copy-right">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<p> © Copyright all rights reserved - DOO DEALS </p>
+</div>
+</div>
+</div>
+</div>
+<!-- ======= footer area end ======= -->
+</div>
+</body>
+
+</html>
